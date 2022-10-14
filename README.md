@@ -50,6 +50,15 @@ screen -r yourname      -> 回到yourname这个session
 screen -d yourname      -> 远程detach某个session
 screen -d -r yourname   -> 结束当前session并回到yourname这个session
 ```
+## 常用caddy2参数
+```
+systemctl daemon-reload  # 重载服务
+systemctl enable caddy   # 开机启动
+systemctl start caddy    # 启动
+systemctl stop caddy     # 停止
+systemctl restart caddy  # 重启
+systemctl status caddy   # 查看状态
+```
 ## 编译Openwrt
 
 [coolsnowwolf-lede-编译自己需要的 OpenWrt 固件](https://github.com/coolsnowwolf/lede "openwrt编译")
