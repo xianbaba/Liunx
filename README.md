@@ -23,6 +23,10 @@ wget https://raw.githubusercontent.com/CokeMine/ServerStatus-Hotaru/master/statu
 ```
 wget -N --no-check-certificate https://raw.githubusercontent.com/iiiiiii1/doubi/master/mtproxy_go.sh && bash mtproxy_go.sh
 ```
+## 一键Swap
+```
+curl -O https://raw.githubusercontent.com/stilleshan/code/main/shell/swap.sh && chmod +x swap.sh && ./swap.sh
+```
 ## 开root权限代码
 ```
 #!/bin/bash
