@@ -63,7 +63,7 @@ systemctl status caddy   # 查看状态
 
 [coolsnowwolf-lede-编译自己需要的 OpenWrt 固件](https://github.com/coolsnowwolf/lede "openwrt编译")
 
-## 编译Openwrt
+## Openwrt SSH命令行修改LAN信息
 ```
 uci set network.lan.ipaddr=x.x.x.x            #修改lan口ip
 uci set network.lan.gateway=x.x.x.x         #网关指向上级路由
