@@ -63,5 +63,20 @@ systemctl status caddy   # 查看状态
 
 [coolsnowwolf-lede-编译自己需要的 OpenWrt 固件](https://github.com/coolsnowwolf/lede "openwrt编译")
 
+## 编译Openwrt
+```
+uci set network.lan.ipaddr=x.x.x.x            #修改lan口ip
+uci set network.lan.gateway=x.x.x.x         #网关指向上级路由
+uci set network.lan.dns=x.x.x.x                 #dns指向上级路由
+uci commit network                                      #确认修改
+service network restart                                 #重启网络服务
+https://openwrt.org/docs/guide-u ... wrt_as_routerdevice
+
+uci set dhcp.lan.ignore=1                            #关闭lan口dhcp
+uci commit dhcp                                           #确认修改
+/etc/init.d/dnsmasq restart                         #重启dnsmasq服务，或service dnsmasq restart
+/etc/init.d/odhcpd restart                           #重启odhcpd服务，或service odhcpd restart
+https://openwrt.org/docs/guide-u ... /dhcp_configuration
+```
 
 
